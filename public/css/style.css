@@ -2,32 +2,139 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     width: 100vw;
-    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    
+
 }
+h1{
+    font-size: 35px;
+}
+.swiper {
+    width: 100%;
+    height: 250px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 #header{
     width: 100vw;
+    height: 90px;
     background-color: rgb(223, 223, 223);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+}
+#header .fa-bars{
+    margin-left: 37%;
+    font-size: 30px;
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 20%;
 }
 .logo-header{
     width: 50%;
-    object-fit: contain;
+    
+    
 }
 .logo-header img{
     object-fit:scale-down;
     padding: 10px;
-    width: 100%;
+    height: 80px;
+    width: auto;
 }
+
+#header nav{
+    display: none;
+}
+/* DropDown Menu */
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .sub-menu-wrap.open-menu {
+    max-height: 400px;
+  }
+  
+  .sub-menu {
+    background-color: rgb(223, 223, 223);
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+
+    
+  }
+  
+  .sub-menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+  }
+  
+  .sub-menu-link p {
+    width: 100%;
+  }
+  .sub-menu-link i {
+    width: 55px;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+  }
+  
+  .sub-menu-link i {
+    font-size: 20px;
+    transition: transform 0.5s;
+  }
+  
+  .sub-menu-link:hover i {
+    transform: translateX(5px);
+  }
+  
+  .sub-menu-link:hover p {
+    font-weight: 600;
+  }
+  
+
+
 .home{
+    margin: auto;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1000px;
     justify-content: center;
     align-items: center;
     
+}
+section{
+    margin-bottom: 50px;
 }
 .intro-section{
     display: flex;
@@ -36,12 +143,112 @@ body{
     padding: 15px;
     width: 100%;
 }
-
+.intro-section p{
+    color: rgb(78, 78, 78);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.intro-section p{
+    color: rgb(78, 78, 78);
+}
 
 .despa-ata{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 15px;
+    justify-content: space-evenly;
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+
+}
+.despa-ata div{
+   
+    padding: 7px;
+    border: 1px solid;
+    border-color: orange;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  
+}
+.despa-ata p{
+    margin: auto;
+}
+
+.servicios{
+   
+        text-align: center;
+    
+}
+.servicios article{
+    margin-top: 20px
+}
+
+.clientes{
+    text-align: center;
+}
+.contenedor-clientes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px
+    
+}
+
+.cliente{
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+    
+}
+.cliente img{
+   margin: auto;
+    width: 100%;
+    
+    max-width: 110px;
+}
+.cliente h4{
+    background-color: gray;
+    color: white;
+    position: absolute;
+    bottom:20px;
+    display: none;
     width: 100%;
 }
+.cliente:hover h4{
+    display: block;
+}
+footer{
+    background-color: darkgray;
+}
+
+@media (min-width: 769px) {
+    #header nav{
+        display: flex;
+        width: 50%;
+    }
+    #header nav a{
+        width: 5rem;
+        text-decoration: none;
+        color: black;
+        margin: auto;
+    }
+    .fa-bars{
+        display: none !important;
+    }
+   .despa-ata{
+    flex-direction: row;
+   }
+   .despa-ata div{
+    width: 47%;
+   }
+    
+  }

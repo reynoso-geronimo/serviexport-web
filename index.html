@@ -5,20 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serviexport - Comercio exterior y despachos aduaneros</title>
     <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5e79f3a610.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header">
       <div class="logo-header">
         <img src="./public/img/Serviexport.png" alt="logo" />
       </div>
+      <i class="fa-solid fa-bars"></i>
+
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <a href="" class="sub-menu-link">
+            <p>Home</p>
+          </a>
+          <a href="" class="sub-menu-link">
+            <p>Servicios</p>
+          </a>
+          <a href="" class="sub-menu-link">
+            <p>Oficinas</p>
+          </a>
+          <a href="" class="sub-menu-link">
+            <p>Contacto</p>
+          </a>
+        </div>
+      </div>
+      <nav><a href="">HOME</a><a href="">SERVICIOS</a><a href="">OFICINAS</a><a href="">CONTACTO</a></nav>
     </header>
     <!-- CARRUSEL -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="./public/img/Swiper/aerial-view-cargo-ship-cargo-container-harbor.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./public/img/Swiper/aerial-view-cargo-ship-cargo-container-harbor (1).jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./public/img/Swiper/industrial-port-container-yard.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- fin CARRUSEL -->
     <main class="home">
       <section class="intro-section">
-        <h1>
+        <h2>
           Más de 25 años de trayectoria respaldan la calidad de nuestro servicio
-          Hacemos simple el comercio exterior con seriedad y transparencia
-        </h1>
+        </h2>
+        <p>Hacemos simple el comercio exterior con seriedad y transparencia</p>
         <h3>NUESTRO COMPROMISO</h3>
         <p>
           Ofrecer un servicio integral, optimizando los recursos de la cadena
@@ -26,6 +85,7 @@
           cliente, con responsabilidad, eficiencia y ética profesional
         </p>
       </section>
+
       <section class="despa-ata">
         <div>
           <h3>DESPACHANTES DE ADUANA</h3>
@@ -37,41 +97,95 @@
           </p>
         </div>
 
-        <div> 
-             
-            <h3>AGENTE DE TRANSPORTE ADUANERO</h3>
-            <p>
-              La correcta logística nacional e internacional son fundamentales
-              para el crecimiento y la expansión de los negocios y empresas. El
-              traslado de productos requiere de una gestión y atención
-              específicas. Un agente de transporte A.T.A. y operador de
-              contenedores ante Aduana especializado, resulta de gran
-              importancia, conectando a las zonas productoras con los
-              principales puertos del país y centros de consumo del mundo.
-            </p>
-         
+        <div>
+          <h3>AGENTE DE TRANSPORTE ADUANERO</h3>
+          <p>
+            La correcta logística nacional e internacional son fundamentales
+            para el crecimiento y la expansión de los negocios y empresas. El
+            traslado de productos requiere de una gestión y atención
+            específicas. Un agente de transporte A.T.A. resulta de gran
+            importancia, conectando a las zonas productoras con los principales
+            puertos del país y centros de consumo del mundo.
+          </p>
         </div>
       </section>
-      <section class="oficinas">
+      <section class="servicios">
+        <h1>SERVICIOS</h1>
+        <p>
+          El despachante es un eslabón, un orientador, un promotor. El
+          despachante de aduana constituye el nexo insustituible entre la
+          actividad privada y la actividad pública, en su caso, el estado
+          representado por la aduana y diversos organismos oficiales
+        </p>
+        <article>
+          <h2>SERVICIO DE LOGISTICA NACIONAL</h2>
+          <p>Seguimiento de la mercaderia</p>
+          <p>Embalado / Rotulado</p>
+        </article>
+        <article>
+          <h2>SERVICIO DE OPERATIVA DE EXPORTACION E IMPORTACION</h2>
+          <p>Planeamiento de operaciones</p>
+          <p>Confeccióon y gestíon de elementos de pago</p>
+          <p>Reserva de bodega maritima y áerea</p>
+          <p>Seguimiento permantente del estado de las cargas</p>
 
+        </article>
+        <article>
+          <h2>SERVICIO DE DESPACHOS ADUANEROS</h2>
+          <p>Despachos de exportación e importacion</p>
+        </article>
       </section>
+      <section class="oficinas"></section>
+
       <section class="clientes">
-        <article class="cliente">
-            <img src="" alt="">
-            <h4>CLIENTE</h4>
-        </article>
-        <article class="cliente">
-            <img src="" alt="">
-            <h4>CLIENTE</h4>
-        </article>
-        <article class="cliente">
-            <img src="" alt="">
-            <h4>CLIENTE</h4>
-        </article>
+        <h1>NUESTROS CLIENTES</h1>
+        <p>
+          Nuestro objetivo es cumplir con nuestros clientes de manera eficiente,
+          con honestidad e idoneidad
+        </p>
+        <div class="contenedor-clientes">
+          <article class="cliente">
+            <img src="./public/img/LOGOS/Logo Cofrutas.jpg" alt="" />
+            <h4>COFRUTAS</h4>
+          </article>
+          <article class="cliente">
+            <img
+              src="./public/img/LOGOS/Green Globe Overseas LOGO - PDF.jpg"
+              alt=""
+            />
+            <h4>GREEN GLOBE</h4>
+          </article>
+          <article class="cliente">
+            <img src="./public/img/LOGOS/Logo Papel Prensa.jpg" alt="" />
+            <h4>PAPEL PRENSA</h4>
+          </article>
+          <article class="cliente">
+            <img src="./public/img/LOGOS/logo La Anonima.jpg" alt="" />
+            <h4>LA ANONIMA</h4>
+          </article>
+          <article class="cliente">
+            <img src="./public/img/LOGOS/Logo Metrive.jpg" alt="" />
+            <h4>METRIVE</h4>
+          </article>
+          <article class="cliente">
+            <img src="./public/img/LOGOS/Logo Prear.jpg" alt="" />
+            <h4>PREAR</h4>
+          </article>
+          <article class="cliente">
+            <img src="./public/img/LOGOS/cauquen.jpg" alt="" />
+            <h4>CAUQUEN</h4>
+          </article>
+          <article class="cliente">
+            <img src="./public/img/LOGOS/Logo La Leonor.jpg" alt="" />
+            <h4>LA LEONOR</h4>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
-        <p>Desarrollado por Geronimo Reynoso</p>
+      <p>Desarrollado por Geronimo Reynoso</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./public/js/functions.js"></script>
   </body>
 </html>
