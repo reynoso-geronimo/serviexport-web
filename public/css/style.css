@@ -8,10 +8,14 @@ body{
     width: 100vw;
     font-family: 'Roboto', sans-serif;
     
-
+    
+}
+html {
+  scroll-behavior: smooth;
 }
 h1{
     font-size: 35px;
+   
 }
 .swiper {
     width: 100%;
@@ -71,7 +75,7 @@ h1{
     position: absolute;
     top: 100%;
     right: 0;
-    width: 250px;
+    width: 150px;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -94,7 +98,7 @@ h1{
     justify-content: flex-start;
     text-decoration: none;
     color: #525252;
-    margin: 12px 0;
+    padding: 12px 0;
   }
   
   .sub-menu-link p {
@@ -163,26 +167,48 @@ section{
 }
 .despa-ata div{
    
-    padding: 7px;
-    border: 1px solid;
-    border-color: orange;
-    border-radius: 1px;
+    padding: 15px;
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
   
 }
+.despa-ata div:first-child::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 60%;
+    border-bottom: 2px solid orange;
+  }
+  .despa-ata div:nth-child(2):after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 5px;
+    width: 60%;
+    border-bottom: 2px solid blue;
+  }
 .despa-ata p{
     margin: auto;
 }
-
+#servicios{
+  position: relative;
+  top: -100px;
+}
 .servicios{
-   
-        text-align: center;
+    
+    width: 90%;
+    text-align: center;
+    padding: 5px;
     
 }
-.servicios article{
-    margin-top: 20px
+
+.servicios .contenedor-servicios article{
+    padding-top: 20px
 }
 
 .clientes{
@@ -227,9 +253,38 @@ section{
     display: block;
 }
 footer{
-    background-color: darkgray;
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    padding-top: 20PX;
+    flex-direction: column;
+    align-items: center;
 }
-
+.contacto{
+  color: white;
+  
+}
+.contacto i{
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 3px;
+}
+.contacto a{
+  text-decoration: none;
+  color: white;
+}
+.info-contacto{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.dev{
+  color: white;
+  margin-top: 60px;
+}
+.dev a{
+  text-decoration: none;
+  color: white;
+}
 @media (min-width: 769px) {
     #header nav{
         display: flex;
@@ -250,5 +305,30 @@ footer{
    .despa-ata div{
     width: 47%;
    }
+
+   .despa-ata div:first-child::after {
+    height: 60%;
+    width: 100%;
+    border-bottom:none;
+    border-right: 2px solid blue;
     
   }
+  .despa-ata div:nth-child(2):after {
+    height: 60%;
+    width: 100%;
+    border-bottom:none;
+    border-left: 2px solid orange;
+  }
+
+   .contenedor-servicios{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contenedor-servicios article h2 ,.contenedor-servicios article p{
+    width: 42vw;
+    max-width: 440px;
+    padding: 2px;
+}
+}

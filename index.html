@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serviexport - Comercio exterior y despachos aduaneros</title>
+    <link rel="icon" href="./public/img/BolaSXP.png" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/style.css" />
     <link
       rel="stylesheet"
@@ -29,21 +30,25 @@
 
       <div class="sub-menu-wrap" id="subMenu">
         <div class="sub-menu">
-          <a href="" class="sub-menu-link">
+          <a href="#" class="sub-menu-link">
             <p>Home</p>
           </a>
-          <a href="" class="sub-menu-link">
+          <a href="#servicios" class="sub-menu-link">
             <p>Servicios</p>
           </a>
-          <a href="" class="sub-menu-link">
+          <!-- <a href="" class="sub-menu-link">
             <p>Oficinas</p>
-          </a>
-          <a href="" class="sub-menu-link">
+          </a> -->
+          <a href="#contacto" class="sub-menu-link">
             <p>Contacto</p>
           </a>
         </div>
       </div>
-      <nav><a href="">HOME</a><a href="">SERVICIOS</a><a href="">OFICINAS</a><a href="">CONTACTO</a></nav>
+      <nav>
+        <a href="#">HOME</a>
+        <a href="#servicios">SERVICIOS</a>
+        <!-- <a href="">OFICINAS</a> -->
+        <a href="#contacto">CONTACTO</a></nav>
     </header>
     <!-- CARRUSEL -->
     <div class="swiper mySwiper">
@@ -72,7 +77,7 @@
       <div class="swiper-pagination"></div>
     </div>
     <!-- fin CARRUSEL -->
-    <main class="home">
+    <main class="home" id="home">
       <section class="intro-section">
         <h2>
           Más de 25 años de trayectoria respaldan la calidad de nuestro servicio
@@ -109,36 +114,64 @@
           </p>
         </div>
       </section>
-      <section class="servicios">
+      <span id="servicios"></span>
+      <section class="servicios" >
         <h1>SERVICIOS</h1>
+        <img src="./public/img/BolaSXP.png" alt="" width="25px">
         <p>
           El despachante es un eslabón, un orientador, un promotor. El
           despachante de aduana constituye el nexo insustituible entre la
           actividad privada y la actividad pública, en su caso, el estado
           representado por la aduana y diversos organismos oficiales
         </p>
-        <article>
-          <h2>SERVICIO DE LOGISTICA NACIONAL</h2>
-          <p>Seguimiento de la mercaderia</p>
-          <p>Embalado / Rotulado</p>
-        </article>
-        <article>
-          <h2>SERVICIO DE OPERATIVA DE EXPORTACION E IMPORTACION</h2>
-          <p>Planeamiento de operaciones</p>
-          <p>Confeccióon y gestíon de elementos de pago</p>
-          <p>Reserva de bodega maritima y áerea</p>
-          <p>Seguimiento permantente del estado de las cargas</p>
-
-        </article>
-        <article>
-          <h2>SERVICIO DE DESPACHOS ADUANEROS</h2>
-          <p>Despachos de exportación e importacion</p>
-        </article>
-      </section>
+        <div class="contenedor-servicios">
+          <article>
+            <h2>SERVICIO DE OPERATIVA DE EXPORTACION E IMPORTACION</h2>
+            <p>Planeamiento de operaciones</p>
+            <p>Confeccióon y gestíon de elementos de pago</p>
+            <p>Reserva de bodega maritima y áerea</p>
+            <p>Seguimiento permantente del estado de las cargas</p>
+  
+          </article>
+          <article>
+            <h2>SERVICIO DE DESPACHOS ADUANEROS</h2>
+            <ul>
+              <p>Despachos de exportación e importacion</p>
+            <p>Clasificación arancelaria</p>
+            <p>Asesoramiento integral en materia aduanera</p>
+            <p>Confección de docuementos</p>
+            <p>Seguimiento de importaciones temporales</p>
+            <p>Gestión ante organismos oficiales y cámaras de comercio</p>
+            <p>Tramitacion de reintegros y demás beneficios</p>
+            <p>Cobertura en todo el país</p>
+            </ul>
+          </article>
+          <article>
+            <h2>SERVICIO DE LOGISTICA NACIONAL</h2>
+            <p>Seguimiento de la mercaderia</p>
+            <p>Embalado / Rotulado</p>
+          </article>
+          <article>
+            <h2>SERVICIO DE AGENTE DE TRANSPORTE ADUANERO</h2>
+            <p>Transbordos</p>
+            <p>Confección de hojas de ruta, MIC DTA Y CRT</p>
+          </article>
+          <article>
+            <h2>SERVICIO DE DEPOSITO FISCAL</h2>
+            <p>Almacenaje de mercaderia</p>
+            <p>Consolidación y desconsolidación de contenedores</p>
+            <p>Control de daños</p>
+            <p>Servicio aduanero permantente</p>
+            <p>Servicio de pesada de cargas y camiones</p>
+            <p>Control de Invetario</p>
+          </article>
+        </section>
+        </div>
       <section class="oficinas"></section>
 
       <section class="clientes">
         <h1>NUESTROS CLIENTES</h1>
+        <img src="./public/img/BolaSXP.png" alt="" width="25px">
         <p>
           Nuestro objetivo es cumplir con nuestros clientes de manera eficiente,
           con honestidad e idoneidad
@@ -150,7 +183,7 @@
           </article>
           <article class="cliente">
             <img
-              src="./public/img/LOGOS/Green Globe Overseas LOGO - PDF.jpg"
+              src="./public/img/LOGOS/LOGO GREEN GLOBE.png"
               alt=""
             />
             <h4>GREEN GLOBE</h4>
@@ -179,11 +212,26 @@
             <img src="./public/img/LOGOS/Logo La Leonor.jpg" alt="" />
             <h4>LA LEONOR</h4>
           </article>
+          <article class="cliente">
+            <img src="./public/img/LOGOS/LOGO ELEMENTA.png" alt="" />
+            <h4>ELEMENTA</h4>
+          </article>
+          <article class="cliente">
+            <img src="./public/img/LOGOS/chimex.jpg" alt="" />
+            <h4>CHIMEX FOOD</h4>
+          </article>
         </div>
       </section>
     </main>
     <footer>
-      <p>Desarrollado por Geronimo Reynoso</p>
+     <div class="contacto" id="contacto">
+      <h2>Informacion de contacto</h2>
+        <p class="info-contacto" ><a href="mailto:adm@serviexportsp.com.ar"><i class="fa-regular fa-envelope"></i> Email: adm@serviexportsp.com.ar</a></p>
+        <p class="info-contacto"><a href="tel:+5493329425217"><i class="fa-solid fa-phone"></i> Telefono: +54 9 03329-425217</a></p>
+        <p class="info-contacto" ><a class="info-contacto"href="https://ar.linkedin.com/company/serviexport-san-pedro"><i class="fa-brands fa-linkedin-in"></i> Linkedin: serviexport-san-pedro</a></p>
+    
+     </div>
+      <div class="dev"><p>Desarrollado por Geronimo Reynoso <a href="https://github.com/reynoso-geronimo/"><i class="fa-brands fa-github"></i></a> <a class="info-contacto"href=""><i class="fa-brands fa-linkedin-in"></i></p></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./public/js/functions.js"></script>
