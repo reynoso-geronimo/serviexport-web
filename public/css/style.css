@@ -153,6 +153,7 @@ section{
     margin-bottom: 50px;
 }
 .intro-section{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,7 +194,7 @@ section{
     bottom: 0;
     height: 5px;
     width: 60%;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid rgb(227 126 56);;
   }
   .despa-ata div:nth-child(2):after {
     content: "";
@@ -202,7 +203,7 @@ section{
     top: 0;
     height: 5px;
     width: 60%;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(58, 75, 116);;
   }
 .despa-ata p{
     margin: auto;
@@ -278,7 +279,7 @@ section{
     bottom: -10px;
     height: 5px;
     width: 45%;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid rgb(227 126 56);;
   }
   .title-container::before {
     content: "";
@@ -287,13 +288,23 @@ section{
     bottom: -15px;
     height: 5px;
     width: 45%;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(58, 75, 116);;
   }
 
 .servicios .contenedor-servicios article{
     padding-top: 20px
 }
-
+.contenedor-servicios i{
+  font-size: 30px;
+  height: 45px;
+  width: 45px;
+  padding-top: 2px;
+  margin-right:6px;
+  border: 6px solid rgb(227 126 56);
+  background-color: rgb(227 126 56);
+  border-radius: 100%;
+  color: rgb(58, 75, 116);
+}
 .clientes{
     text-align: center;
     width: 90%;
@@ -354,7 +365,10 @@ footer{
   font-size: 20px;
   border: 1px solid white;
   border-radius: 100%;
-  padding: 3px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  padding-top: 4px;
 }
 .contacto a{
   text-decoration: none;
@@ -397,14 +411,14 @@ footer{
     height: 60%;
     width: 100%;
     border-bottom:none;
-    border-right: 2px solid blue;
+    border-right: 2px solid rgb(58, 75, 116);;
     
   }
   .despa-ata div:nth-child(2):after {
     height: 60%;
     width: 100%;
     border-bottom:none;
-    border-left: 2px solid orange;
+    border-left: 2px solid rgb(227 126 56);;
   }
 
    .contenedor-servicios{
