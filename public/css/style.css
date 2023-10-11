@@ -294,17 +294,31 @@ section{
 .servicios .contenedor-servicios article{
     padding-top: 20px
 }
-.contenedor-servicios i{
+.contenedor-servicios article:nth-child(odd) i {
   font-size: 30px;
   height: 45px;
   width: 45px;
   padding-top: 2px;
-  margin-right:6px;
-  border: 6px solid rgb(227 126 56);
-  background-color: rgb(227 126 56);
+  margin-right: 6px;
+  border: 6px solid rgb(58, 75, 116); /* Cambia el color del borde a tu preferencia */
+  background-color: rgb(58, 75, 116); /* Cambia el color de fondo a tu preferencia */
   border-radius: 100%;
-  color: rgb(58, 75, 116);
+  color: rgb(227, 126, 56); /* Cambia el color del ícono a tu preferencia */
 }
+
+/* Estilo para el segundo ícono */
+.contenedor-servicios article:nth-child(even) i {
+  font-size: 30px;
+  height: 45px;
+  width: 45px;
+  padding-top: 2px;
+  margin-right: 6px;
+  border: 6px solid rgb(227, 126, 56); /* Cambia el color del borde a tu preferencia */
+  background-color: rgb(227, 126, 56); /* Cambia el color de fondo a tu preferencia */
+  border-radius: 100%;
+  color: rgb(58, 75, 116); /* Cambia el color del ícono a tu preferencia */
+}
+
 .clientes{
     text-align: center;
     width: 90%;
@@ -359,7 +373,14 @@ footer{
 }
 .contacto{
   color: white;
-  
+ 
+ 
+}
+
+.map iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
 }
 .contacto i{
   font-size: 20px;
@@ -431,5 +452,12 @@ footer{
     width: 42vw;
     max-width: 440px;
     padding: 2px;
+}
+.contacto{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 40px;
 }
 }
