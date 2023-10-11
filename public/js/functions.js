@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper(".mySwiper", {
         pagination: {
             el: ".swiper-pagination",
@@ -32,13 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
           let elementTop = reveals[i].getBoundingClientRect().top;
           let elementVisible = 150;
       
-          if (elementTop < windowHeight - elementVisible) {
+          if (elementTop < (windowHeight - elementVisible)) {
+           
             reveals[i].classList.add("active");
           }
         }
       }
       
       window.addEventListener("scroll", reveal);
-      
+      if(window.innerHeight>1000){
+        reveal()
+      }
     
 })
