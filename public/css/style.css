@@ -237,26 +237,26 @@ section{
 }
 @keyframes fade-left {
   0% {
-    left: -100px;
-    /* transform: translateX(-100px); */
+    
+    transform: translateX(-100px); 
     opacity: 0;
   }
   100% {
-    left: 0px;
-    /* transform: translateX(0); */
+   
+    transform: translateX(0); 
     opacity: 1;
   }
 }
 
 @keyframes fade-right {
   0% {
-    right: -100px;
-    /* transform: translateX(100px); */
+   
+    transform: translateX(100px); 
     opacity: 0;
   }
   100% {
-    right: 0;
-    /* transform: translateX(0); */
+   
+    transform: translateX(0); 
     opacity: 1;
   }
 }
