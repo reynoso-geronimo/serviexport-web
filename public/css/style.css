@@ -346,7 +346,8 @@ section{
     height: 140px;
     width: 170px;
     position: relative;
-    
+    margin-top: 10px;
+    margin-bottom: 10px
     
 }
 .cliente img{
