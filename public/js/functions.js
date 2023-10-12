@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("scroll", reveal);
-  if (window.innerHeight > 1000) {
+  if (window.innerHeight >900) {
     reveal()
   }
 
@@ -62,8 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("scroll", zoom);
-  if (window.innerHeight > 1000) {
-    zoom()
-  }
+  
 
 })
