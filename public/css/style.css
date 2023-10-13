@@ -260,7 +260,9 @@ section{
     opacity: 1;
   }
 }
-
+.export-import img{
+  width: 100%;
+}
 #servicios{
   position: relative;
   top: -100px;
