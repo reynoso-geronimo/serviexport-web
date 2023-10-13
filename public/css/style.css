@@ -106,7 +106,7 @@ h1{
   .sub-menu-link {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     text-decoration: none;
     color: #525252;
     padding: 12px 0;
