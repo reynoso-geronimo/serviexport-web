@@ -295,31 +295,31 @@ section{
   }
 
 .servicios .contenedor-servicios article{
-    padding-top: 20px
+    padding-top: 20px;
 }
 .contenedor-servicios article:nth-child(odd) i {
-  font-size: 30px;
+  font-size: 28px;
   height: 45px;
   width: 45px;
-  padding-top: 2px;
+  padding-top: 7px;
   margin-right: 6px;
-  border: 6px solid rgb(58, 75, 116); /* Cambia el color del borde a tu preferencia */
-  background-color: rgb(58, 75, 116); /* Cambia el color de fondo a tu preferencia */
+  border: 2px solid  rgb(227, 126, 56); 
+  background-color: rgb(58, 75, 116); 
   border-radius: 100%;
-  color: rgb(227, 126, 56); /* Cambia el color del ícono a tu preferencia */
+  color: rgb(227, 126, 56); 
 }
 
 /* Estilo para el segundo ícono */
 .contenedor-servicios article:nth-child(even) i {
-  font-size: 30px;
+  font-size: 28px;
   height: 45px;
   width: 45px;
-  padding-top: 2px;
+  padding-top: 7px;
   margin-right: 6px;
-  border: 6px solid rgb(227, 126, 56); /* Cambia el color del borde a tu preferencia */
-  background-color: rgb(227, 126, 56); /* Cambia el color de fondo a tu preferencia */
+  border: 2px solid   rgb(58, 75, 116); ; 
+  background-color: rgb(227, 126, 56); 
   border-radius: 100%;
-  color: rgb(58, 75, 116); /* Cambia el color del ícono a tu preferencia */
+  color: rgb(58, 75, 116); 
 }
 
 .clientes{
@@ -419,6 +419,19 @@ footer{
   color: white;
 }
 @media (min-width: 769px) {
+
+    .swiper-text{
+        top: 60%;
+        left: 50%;
+        font-size: 35px;
+        width: 400px;
+        /* bring your own prefixes */
+        transform: translate(-50%, -60%);
+    
+        text-align: center;
+      }
+
+
     #header nav{
         display: flex;
         width: 50%;
