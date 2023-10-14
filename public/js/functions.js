@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let elementVisible = 350;
 
       if (elementTop - (windowHeight - elementVisible)<0 && elementTop - (windowHeight - elementVisible)>-150) {
-        console.log('hi');
+        
         logosClientes[i].classList.add("zoom");
       }else{
         logosClientes[i].classList.remove("zoom");

@@ -436,14 +436,29 @@ footer{
 
     #header nav{
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50%;
+        height: 90px;
     }
     #header nav a{
-        width: 5rem;
+      text-align: center;
+        width: 20%;
+        height: 100%;
+        padding-top: 30px;
+        margin: auto;
         text-decoration: none;
         color: black;
-        margin: auto;
+        transition: all 0.2s ease-in;
     }
+    #header nav a:hover{
+      
+        font-weight: 600;
+        background-color: #bebebe;
+        border: 1px solid gray;
+    }
+
+
     .fa-bars{
         display: none !important;
     }
