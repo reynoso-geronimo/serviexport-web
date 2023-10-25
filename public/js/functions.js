@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".fa-bars")
 
   menu.addEventListener('click', () => {
-    console.log('hola')
+
     subMenu.classList.toggle("open-menu")
   })
   function reveal() {
