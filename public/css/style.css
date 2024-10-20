@@ -307,6 +307,7 @@ section {
 .clientes {
   text-align: center;
   width: 90%;
+  margin-top: 8rem;
 }
 .contenedor-clientes {
   display: flex;
@@ -315,7 +316,8 @@ section {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
 }
 
 .cliente {
@@ -325,8 +327,8 @@ section {
   height: 140px;
   width: 170px;
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .cliente img {
   margin: auto;
