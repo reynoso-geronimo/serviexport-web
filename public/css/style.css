@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body {
   width: 100%;
@@ -39,8 +39,8 @@ h1 {
   top: 20px;
   left: 5px;
   text-align: left;
-  width: 300px;
-  font-family: "Roboto";
+  width: 320px;
+  font-family: "Poppins";
   font-weight: bolder;
   color: white;
   font-size: 30px;
@@ -345,10 +345,14 @@ section {
   background-color: gray;
   color: white;
   position: absolute;
-  bottom: 20px;
+  bottom: -20px;
   display: none;
   width: 100%;
 }
+.cliente:hover img {
+  max-width: 170px;
+}
+
 .cliente:hover h4 {
   display: block;
 }
@@ -393,6 +397,7 @@ footer {
 .dev a {
   text-decoration: none;
   color: white;
+  margin: 0 5px;
 }
 @media (min-width: 769px) {
   .swiper-text {
